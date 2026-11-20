@@ -1,0 +1,17 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+.env
+.env.*
+*.log
+*.tmp
+*.wav
+*.m4a
+*.mp4
+*.srt
+*.verification.json
+build/
+dist/
+output/
+review/

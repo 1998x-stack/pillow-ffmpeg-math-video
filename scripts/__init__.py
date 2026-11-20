@@ -1,0 +1,1 @@
+"""Verified Pillow+FFmpeg 2-D math animation kit."""

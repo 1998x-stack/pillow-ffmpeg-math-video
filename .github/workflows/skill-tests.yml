@@ -1,0 +1,28 @@
+name: Math Video Skill Tests
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install media dependencies
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg espeak-ng fonts-noto-cjk
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Validate Skill structure
+        run: python -m scripts.check_skill
+      - name: Run tests
+        run: python -m pytest -q tests
+      - name: Smoke test audiovisual pipeline
+        run: |
+          python -m scripts.demo --output /tmp/ci-demo.mp4 --fps 12
+          python -m scripts.speech_pipeline --video /tmp/ci-demo.mp4 --segments assets/narration.example.json --output /tmp/ci-with-voice.mp4 --max-tempo 1.25
+          ffprobe -v error -show_entries stream=codec_type,codec_name -of json /tmp/ci-with-voice.mp4

@@ -1,0 +1,14 @@
+{
+  "description": "Engineering rendering demo, deliberately not a complete proof lesson",
+  "gates": {
+    "proof": {"status": "not_run", "evidence": []},
+    "geometry": {"status": "pass", "evidence": ["tests/test_pillow_draw.py"]},
+    "topology": {"status": "not_run", "evidence": []},
+    "labels": {"status": "pass", "evidence": ["tests/test_demo_and_media.py"]},
+    "temporal": {"status": "pass", "evidence": ["tests/test_timeline_verify.py"]},
+    "raster": {"status": "pass", "evidence": ["assets/benchmark.json"]},
+    "media": {"status": "pass", "evidence": ["assets/demo_geometry.mp4"]},
+    "decoded_frames": {"status": "pass", "evidence": ["assets/demo_review/contact_sheet.png"]},
+    "human_review": {"status": "not_run", "evidence": []}
+  }
+}

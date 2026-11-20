@@ -1,0 +1,15 @@
+{
+  "version": "2026-11-20",
+  "purpose": "教学数学术语口播审阅字典；不自动证明实际 TTS 发音正确",
+  "terms": [
+    {"written": "焦距", "spoken": "两个焦点之间的距离", "risk": "和焦半距混淆", "review_required": true},
+    {"written": "焦半距", "spoken": "焦半距", "risk": "不要误说成两焦点距离", "review_required": true},
+    {"written": "半长轴", "spoken": "半长轴", "risk": "长为多音字，需要听审", "review_required": true},
+    {"written": "平方根", "spoken": "平方根", "risk": "平方和根号区别", "review_required": true},
+    {"written": "切线", "spoken": "切线", "risk": "切字读 qiē", "review_required": true},
+    {"written": "重合", "spoken": "重合", "risk": "重字读 chóng", "review_required": true},
+    {"written": "对称轴", "spoken": "对称轴", "risk": "检查和图中真实位置一致", "review_required": true},
+    {"written": "离心率", "spoken": "离心率", "risk": "检查定义中焦半距与半长轴关系", "review_required": true},
+    {"written": "顶点", "spoken": "顶点", "risk": "可能指函数顶点或几何顶点", "review_required": true}
+  ]
+}

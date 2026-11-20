@@ -1,0 +1,4 @@
+Pillow>=11.0,<14
+sympy>=1.13,<2
+Shapely>=2.0,<3
+pytest>=8.0,<10

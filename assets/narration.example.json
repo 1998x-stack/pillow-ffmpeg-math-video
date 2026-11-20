@@ -1,0 +1,18 @@
+[
+  {
+    "id": "intro",
+    "claim_id": "lesson-introduction",
+    "start": 0.0,
+    "end": 2.8,
+    "spoken_text": "勾股定理。",
+    "subtitle": "勾股定理。"
+  },
+  {
+    "id": "geometry",
+    "claim_id": "right-triangle-translation",
+    "start": 2.8,
+    "end": 6.0,
+    "spoken_text": "图形平移。",
+    "subtitle": "图形平移。"
+  }
+]

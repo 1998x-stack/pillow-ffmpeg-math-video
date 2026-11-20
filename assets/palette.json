@@ -1,0 +1,14 @@
+{
+  "name": "math-education-dark-v1",
+  "background": "#071728",
+  "grid": "#14334A",
+  "axis": "#42728F",
+  "text": "#F3FAFF",
+  "muted": "#9CB8C9",
+  "point": "#FFE09E",
+  "primary": "#6BE2F9",
+  "emphasis": "#FFD977",
+  "warning": "#F5A17B",
+  "verify_pass": "#61D6B0",
+  "verify_fail": "#EF6A74"
+}
